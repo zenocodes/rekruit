@@ -1,0 +1,46 @@
+<%- include('partials/header') %>
+
+    <main class="access">
+        <form action="/signup" method="post">
+            <img src="/img/logo.png" alt="" class="logo">
+            <label for="">Full Name</label>
+            <input type="text" name="fullname" id="" required>
+            <label for="">Email Address</label>
+            <input type="email" name="email" id="" required>
+            <label for="">Password</label>
+            <input type="password" name="password" id="" required>
+            <label for="">Confirm Password</label>
+            <input type="password" name="confirm-password" id="" required>
+            <fieldset>
+                <legend>Join as:</legend>
+                <div>
+                  <input type="checkbox" id="" value="employer">
+                  <label for="employer">An Employer</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="" value="jobSeeker">
+                  <label for="job-seeker">A Job Seeker</label>
+                </div>
+            </fieldset>
+            <input type="hidden" name="user-type">
+            <input type="submit" value="Create Account">
+            <p>Already have an account? <a href="/login">Log In</a></p>
+        </form>
+    </main>
+
+    <script>
+
+        let checkboxes = document.querySelectorAll("input[type='checkbox']")
+        let userType = document.querySelector("input[type='hidden']")
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                if(checkbox.checked) {
+                    userType.value = checkbox.value
+                    console.log(userType.value)
+                }
+            })
+        })
+
+    </script>
+    
+<%- include('partials/footer') %>
