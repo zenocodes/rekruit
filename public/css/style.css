@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Dosis;
+    src: url(Dosis-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Dosis;
+}
+
+.access {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #d7d2cc 10%, #304352 100%);
+}
+
+.access form {
+    width: 30%;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.access .logo {
+    width: 50%;
+    margin: 5px auto;
+}
+
+.access form input {
+    margin-bottom: 6px;
+    font-size: 22px;
+    padding: 5px;
+}
+
+.access form div {
+    margin-left: 5px;
+}
+
+.access form input[type='submit'] {
+    margin-top: 6px;
+    background-color: #b50e5c;
+    border: 1px solid #b50e5c;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.access a {
+    color: #161616;
+    font-weight: bold;
+}
