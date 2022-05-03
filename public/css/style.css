@@ -119,3 +119,39 @@
     color: #161616;
     font-weight: bold;
 }
+
+#new-post section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#new-post #post {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#new-post #uploads {
+    width: 29%;
+}
+
+#new-post #uploads #list {
+    height: 800px;
+    background-color: #d0d9e2;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#new-post .blog-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#new-post .thumbnail {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
